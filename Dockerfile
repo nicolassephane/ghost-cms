@@ -7,6 +7,7 @@ RUN apt-get update -yq \
    && apt-get clean -y
 
 ADD . /app/
+ADD . /nicolas/
 WORKDIR /app
 RUN npm install
 
